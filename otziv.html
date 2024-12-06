@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы - Поликлиника DIALOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <img src="img/first-el.png" alt="Логотип DIALOS">
+        </a>
+        <h1>Поликлиника DIALOS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="appointment.html">Запись на прием</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="otziv.html">Оставить отзыв</a></li>
+		<li><a href="privacy_policy.html">Политика конфиденциальности</a></li>
+            </ul>
+        </nav>
+        <div id="social-icons">
+            <a href="https://vk.com/" target="_blank">
+                <img src="img/vk.png" alt="VK">
+            </a>
+            <a href="https://t.me/" target="_blank">
+                <img src="img/telegram.png" alt="Telegram">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="reviews">
+            <h2>Отзывы</h2>
+            <p>Мы ценим ваше мнение! Пожалуйста, оставьте свой отзыв о нашей работе.</p>
+            <form id="review-form">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="review">Ваш отзыв:</label>
+                <textarea id="review" name="review" rows="5" required></textarea>
+
+                <button type="submit">Отправить отзыв</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Поликлиника DIALOS. Все права защищены.</p>
+    </footer>
+
+    <div id="alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Спасибо за ваш отзыв!</h2>
+            <p>Мы ценим ваше мнение и стараемся становиться лучше.</p>
+        </div>
+    </div>
+    <script src="alo.js"></script>
+</body>
+</html>

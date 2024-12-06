@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись на прием - Поликлиника DIALOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <img src="img/first-el.png" alt="Логотип DIALOS">
+        </a>
+        <h1>Поликлиника DIALOS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="appointment.html">Запись на прием</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+		<li><a href="otziv.html">Оставить отзыв</a></li>
+            </ul>
+        </nav>
+        <div id="social-icons">
+            <a href="https://vk.com" target="_blank">
+                <img src="img/vk.png" alt="VK">
+            </a>
+            <a href="https://t.me" target="_blank">
+                <img src="img/telegram.png" alt="Telegram">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="appointment">
+            <h2>Запись на прием</h2>
+            <form id="appointment-form" action="submit_appointment.php" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="doctor">Выберите врача:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="therapist">Терапевт</option>
+                    <option value="pediatrician">Педиатр</option>
+                    <option value="cardiologist">Кардиолог</option>
+                    <option value="gynecologist">Гинеколог</option>
+                    <option value="urologist">Уролог</option>
+                    <option value="ophthalmologist">Офтальмолог</option>
+                </select>
+
+                <label for="date">Выберите дату:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Выберите время:</label>
+                <input type="time" id="time" name="time" required>
+
+                <div id="privacy-policy">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">Я согласен с <a href="privacy_policy.html" target="_blank">политикой конфиденциальности</a></label>
+                </div>
+
+                <button type="submit">Записаться</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Поликлиника DIALOS. Все права защищены.</p>
+        <a> href="privacy_policy"><p>Политика конфиденциальности</p></a>
+    </footer>
+    <div id="alert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Успешно!</h2>
+            <p>Ваша запись на прием была успешно отправлена. Мы свяжемся с вами в ближайшее время.</p>
+        </div>
+    </div>
+    <script src="slider.js"></script>
+    <script src="transition.js"></script>
+    <script src="modal.js"></script>
+    <script src="alert.js"></script>
+</body>
+</html>

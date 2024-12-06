@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Поликлиника DIALOS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="logo">
+            <img src="img/first-el.png" alt="Логотип DIALOS">
+        </a>
+        <h1>Поликлиника DIALOS</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="appointment.html">Запись на прием</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="otziv.html">Оставить отзыв</a></li>
+                <li><a href="privacy_policy.html">Политика конфиденциальности</a></li>
+            </ul>
+        </nav>
+        <div id="social-icons">
+            <a href="https://vk.com/" target="_blank">
+                <img src="img/vk.png" alt="VK">
+            </a>
+            <a href="https://t.me/" target="_blank">
+                <img src="img/telegram.png" alt="Telegram">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="slider">
+            <div class="slides">
+                <div class="slide"><img src="img/1.jpg" alt="Slide 1"></div>
+                <div class="slide"><img src="img/2.jpg" alt="Slide 2"></div>
+                <div class="slide"><img src="img/3.jpg" alt="Slide 3"></div>
+                <div class="slide"><img src="img/4.jpg" alt="Slide 4"></div>
+                <div class="slide"><img src="img/5.jpg" alt="Slide 5"></div>
+                <div class="slide"><img src="img/6.jpg" alt="Slide 6"></div>
+		<div class="slide"><img src="img/7.jpg" alt="Slide 7"></div>
+		<div class="slide"><img src="img/8.jpg" alt="Slide 8"></div>
+		<div class="slide"><img src="img/9.jpg" alt="Slide 9"></div>
+            </div>
+            <button id="prev" onclick="prevSlide()">&#10094;</button>
+            <button id="next" onclick="nextSlide()">&#10095;</button>
+	</section>
+        <section id="medicine-section">
+            <h2>О медицине и поликлинике</h2>
+            <p>Поликлиника DIALOS стремится предоставлять высококачественные медицинские услуги, ориентированные на здоровье и благополучие наших пациентов. Мы предлагаем широкий спектр медицинских услуг, включая первичную диагностику, специализированное лечение и профилактические меры.</p>
+            <p>Наши врачи обладают высокой квалификацией и многолетним опытом работы в различных областях медицины. Мы используем современные медицинские технологии и методы лечения, чтобы обеспечить нашим пациентам наилучший результат.</p>
+            <p>В поликлинике DIALOS мы ценим каждого пациента и стремимся создать комфортные условия для вашего визита. Наша цель — помочь вам поддерживать здоровье и улучшать качество жизни.</p>
+        </section>
+        </section>
+        <section id="about">
+            <h2>О нас</h2>
+            <p>Поликлиника DIALOS предоставляет широкий спектр медицинских услуг, начиная от первичной диагностики до специализированного лечения. Наши врачи имеют высокую квалификацию и многолетний опыт работы.</p>
+        </section>
+        <section id="services">
+            <h2>Наши услуги</h2>
+            <ul>
+                <li>Терапия</li>
+                <li>Педиатрия</li>
+                <li>Кардиология</li>
+                <li>Гинекология</li>
+                <li>Урология</li>
+                <li>Офтальмология</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>Контакты</h2>
+            <p>Адрес: ул. Примерная, д. 1, г. Москва</p>
+            <p>Телефон: +7 (495) 123-45-67</p>
+            <p>Email: info@dialos.ru</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Поликлиника DIALOS. Все права защищены.</p>
+    </footer>
+    <div id="privacy-policy-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Политика конфиденциальности</h2>
+            <p>Поликлиника DIALOS уважает вашу конфиденциальность и обязуется защищать ваши персональные данные. Эта политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу информацию.</p>
+            <h3>Сбор информации</h3>
+            <p>Мы собираем информацию, которую вы предоставляете нам при записи на прием, включая ваше имя, телефон, email и другие данные, необходимые для предоставления медицинских услуг.</p>
+            <h3>Использование информации</h3>
+            <p>Мы используем вашу информацию для предоставления медицинских услуг, связи с вами и улучшения наших услуг.</p>
+            <h3>Защита информации</h3>
+            <p>Мы принимаем меры для защиты вашей информации от несанкционированного доступа, использования или раскрытия.</p>
+            <h3>Ваши права</h3>
+            <p>Вы имеете право на доступ к вашей информации, её исправление или удаление. Пожалуйста, свяжитесь с нами, если у вас есть вопросы или запросы.</p>
+        </div>
+    </div>
+    <script src="slider.js"></script>
+    <script src="transition.js"></script>
+    <script src="modal.js"></script>
+</body>
+</html>
